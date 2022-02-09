@@ -1,0 +1,51 @@
+@use '../utils/variables' as *;
+@use '../utils/functions' as *;
+
+.header {
+  padding: rem(41px) rem(30px) rem(20px) rem(34px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    color: $paleWhite;
+    font-weight: 600;
+  }
+  &__btn {
+    width: rem(24px);
+    height: rem(24px);
+    padding: rem(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: rem(3px);
+    cursor: pointer;
+    & > span {
+      display: block;
+      width: 100%;
+      height: rem(2px);
+      background-color: $paleWhite;
+      transition: all 0.3s ease-in-out;
+    }
+    &.active {
+      position: relative;
+      .first {
+        position: absolute;
+        width: rem(18px);
+        top: 12px;
+        transform: rotate(45deg);
+        transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+      }
+      .second {
+        opacity: 0;
+        transition: 0.2s ease-in-out;
+      }
+      .third {
+        position: absolute;
+        width: rem(18px);
+        top: 12px;
+        transform: rotate(-45deg);
+        transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+      }
+    }
+  }
+}
