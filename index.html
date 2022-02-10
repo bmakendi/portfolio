@@ -28,12 +28,23 @@
       <a href="index.html">
         <p class="header__title">Bryan Makendi</p>
       </a>
-      <div class="header__btn" id="menu-btn">
+      <div class="header__btn" id="menu-btn" tabindex="0">
         <span class="first"></span>
         <span class="second"></span>
         <span class="third"></span>
       </div>
     </header>
+    <nav class="menu active">
+      <div class="menu__items">
+        <p class="menu__item">About me</p>
+        <p class="menu__item">Projects</p>
+        <div class="menu__contact">
+          <p class="menu__item menu__item-title">CONTACT</p>
+          <p class="menu__item">bryan.makendi@gmail.com</p>
+          <p class="menu__item">My Resume</p>
+        </div>
+      </div>
+    </nav>
     <main>
       <section class="section landing" id="landing">
         <h1 class="landing__title">
@@ -42,6 +53,18 @@
             >with a passion for visual arts</span
           >
         </h1>
+        <div class="landing__image">
+          <img
+            src="assets/design/ombreDeco_mobile.svg"
+            alt="Bryan Makendi's silhouette"
+          />
+          <div class="lcd">
+            <span class="lcd__text">SCROLL DOWN TO GET TO KNOW ME</span>
+            <span class="lcd__text">SCROLL DOWN TO GET TO KNOW ME</span>
+            <span class="lcd__text">SCROLL DOWN TO GET TO KNOW ME</span>
+            <span class="lcd__text">SCROLL DOWN TO GET TO KNOW ME</span>
+          </div>
+        </div>
       </section>
     </main>
     <script src="scripts/index.js" defer></script>

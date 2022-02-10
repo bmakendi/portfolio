@@ -1,0 +1,34 @@
+@use '../utils/variables' as *;
+@use '../utils/functions' as *;
+
+.menu {
+  display: none;
+  &.active {
+    display: block;
+    z-index: 998;
+    padding: 0 rem(34px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000
+      url('../../../assets/design/grain_effect_background_page.svg');
+    background-size: 100%;
+  }
+  &__items {
+    margin-top: rem(150px);
+  }
+  &__item {
+    margin-bottom: rem(40px);
+    font-weight: 600;
+    font-size: rem(20px);
+    color: #fff;
+    &-title {
+      color: $greyText;
+    }
+  }
+  &__contact {
+    padding-top: rem(50px);
+  }
+}

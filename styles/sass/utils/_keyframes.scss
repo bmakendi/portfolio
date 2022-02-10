@@ -1,0 +1,8 @@
+@keyframes marquee {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
