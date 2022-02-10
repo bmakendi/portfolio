@@ -25,7 +25,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html">
+      <a href="#landing" id="headerBtn">
         <p class="header__title">Bryan Makendi</p>
       </a>
       <div class="header__btn" id="menu-btn" tabindex="0">
@@ -34,14 +34,54 @@
         <span class="third"></span>
       </div>
     </header>
-    <nav class="menu active">
+    <nav class="menu" id="menu" aria-hidden="true">
       <div class="menu__items">
-        <p class="menu__item">About me</p>
-        <p class="menu__item">Projects</p>
+        <a href="#">
+          <p class="menu__item">About me</p>
+        </a>
+        <a href="#">
+          <p class="menu__item">Projects</p>
+        </a>
         <div class="menu__contact">
           <p class="menu__item menu__item-title">CONTACT</p>
-          <p class="menu__item">bryan.makendi@gmail.com</p>
-          <p class="menu__item">My Resume</p>
+          <a
+            href="mailto:bryan.makendi@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p class="menu__item">bryan.makendi@gmail.com</p>
+          </a>
+          <a
+            href="assets/files/CV_Makendi_Bryan_DeveloppeurFrontend.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p class="menu__item">My Resume</p>
+          </a>
+          <div class="menu__socials">
+            <a
+              href="https://www.linkedin.com/in/bryan-makendi/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="assets/design/linkedinLogo.svg"
+                alt="Logo LinkedIn"
+                class="menu__social"
+              />
+            </a>
+            <a
+              href="https://github.com/bmakendi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="assets/design/githubLogo.svg"
+                alt="Logo Github"
+                class="menu__social"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -67,6 +107,6 @@
         </div>
       </section>
     </main>
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
   </body>
 </html>

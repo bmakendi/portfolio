@@ -1,8 +1,38 @@
 @keyframes marquee {
   from {
-    transform: translate(0, 0);
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(100%);
+  }
+}
+
+@keyframes appearing-menu {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    z-index: 998;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes disappearing-menu {
+  0% {
+    z-index: 998;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
   }
 }

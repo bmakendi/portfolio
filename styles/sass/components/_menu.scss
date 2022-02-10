@@ -1,20 +1,23 @@
 @use '../utils/variables' as *;
 @use '../utils/functions' as *;
+@use '../utils/keyframes' as *;
 
 .menu {
-  display: none;
+  z-index: -100;
+  padding: 0 rem(34px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  background: #000
+    url('../../../assets/design/grain_effect_background_page.svg');
+  transition: all 0.6s cubic-bezier(0.26, 0.01, 0, 0.75);
+  background-size: 100%;
   &.active {
-    display: block;
     z-index: 998;
-    padding: 0 rem(34px);
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: #000
-      url('../../../assets/design/grain_effect_background_page.svg');
-    background-size: 100%;
+    transform: translateX(0);
   }
   &__items {
     margin-top: rem(150px);
@@ -30,5 +33,10 @@
   }
   &__contact {
     padding-top: rem(50px);
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: rem(53px);
   }
 }

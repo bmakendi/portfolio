@@ -39,12 +39,15 @@ img {
   font-style: normal;
 }
 body {
+  overflow: hidden;
   background-color: #272727;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .landing {
+  overflow: hidden;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .landing__title {
@@ -60,7 +63,6 @@ body {
   font-weight: 600;
 }
 .landing__image {
-  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
@@ -127,20 +129,58 @@ body {
   transition: transform 0.3s ease-in-out, top 0.3s 0.3s ease-in-out;
 }
 
-.menu {
-  display: none;
+@keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
-.menu.active {
-  display: block;
-  z-index: 998;
+@keyframes appearing-menu {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    z-index: 998;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes disappearing-menu {
+  0% {
+    z-index: 998;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+.menu {
+  z-index: -100;
   padding: 0 2.125rem;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  transform: translateX(-100%);
   background: #000 url("../../../assets/design/grain_effect_background_page.svg");
+  transition: all 0.6s cubic-bezier(0.26, 0.01, 0, 0.75);
   background-size: 100%;
+}
+.menu.active {
+  z-index: 998;
+  transform: translateX(0);
 }
 .menu__items {
   margin-top: 9.375rem;
@@ -157,17 +197,13 @@ body {
 .menu__contact {
   padding-top: 3.125rem;
 }
-
-@keyframes marquee {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translateX(100%);
-  }
+.menu__socials {
+  display: flex;
+  align-items: center;
+  gap: 3.3125rem;
 }
+
 .lcd {
-  overflow: hidden;
   z-index: 0;
   height: 1.875rem;
   width: 75rem;
@@ -178,12 +214,11 @@ body {
   background: #000 url("../../../assets/design/lcd_ornament2.svg") space;
 }
 .lcd__text {
-  padding-left: 10rem;
   min-width: 25.5rem;
   color: #03ad00;
   font-family: Digital-7, sans-serif;
   font-size: 1.25rem;
-  animation: marquee 10s linear infinite;
+  animation: marquee 14s linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,6 @@
 @use '../utils/keyframes';
 
 .lcd {
-  overflow: hidden;
   z-index: 0;
   height: rem(30px);
   width: rem(1200px);
@@ -14,11 +13,10 @@
   align-items: center;
   background: #000 url('../../../assets/design/lcd_ornament2.svg') space;
   &__text {
-    padding-left: 10rem;
     min-width: rem(408px);
     color: $greenLcd;
     font-family: Digital-7, sans-serif;
     font-size: rem(20px);
-    animation: marquee 10s linear infinite;
+    animation: marquee 14s linear infinite;
   }
 }
