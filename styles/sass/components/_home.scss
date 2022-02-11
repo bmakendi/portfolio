@@ -2,7 +2,7 @@
 @use '../utils/functions' as *;
 @use '../base/fonts';
 
-//HOMEPAGE STYLING
+// HOMEPAGE STYLING
 
 body {
   z-index: 1;
@@ -11,7 +11,7 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-//First section
+// Landing page section
 
 .landing {
   overflow: hidden;
@@ -25,6 +25,7 @@ body {
     font-weight: 700;
     font-size: rem(43px);
     line-height: rem(47px);
+    animation: appearing-text 0.6s ease-out forwards;
     &--grey {
       color: $greyText;
       font-weight: 600;
@@ -44,7 +45,15 @@ body {
   }
 }
 
-//Second section
+// Background logo positionning
+
+.circles__logo {
+  position: absolute;
+  top: rem(2px);
+  right: rem(17px);
+}
+
+// About section
 
 .about {
   padding: 0 rem(34px);
@@ -132,5 +141,27 @@ body {
         height: rem(45.65px);
       }
     }
+  }
+}
+
+// Projects section
+
+.projects {
+  padding: 0 rem(34px);
+  margin-top: rem(56px);
+  position: relative;
+  overflow: hidden;
+  color: $white;
+  &__title {
+    margin-bottom: rem(25px);
+    font-size: rem(30px);
+    font-weight: 600;
+  }
+  img {
+    width: rem(303.93px);
+    height: rem(197.05px);
+    margin-left: rem(5px);
+    background: url('../../../assets/design/back_project1.png');
+    background-size: rem(303.93px) rem(197.05px);
   }
 }

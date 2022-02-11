@@ -6,10 +6,11 @@
   position: fixed;
   right: 0;
   left: 0;
-  padding: rem(41px) rem(30px) rem(20px) rem(34px);
+  padding: rem(41px) rem(30px) rem(15px) rem(34px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $bgColor;
   &__title {
     color: $paleWhite;
     font-weight: 600;
