@@ -4,8 +4,10 @@
 
 .menu {
   z-index: -100;
+  overflow: hidden;
+  word-wrap: break-word;
   padding: 0 rem(34px);
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
