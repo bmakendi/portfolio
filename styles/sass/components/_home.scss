@@ -49,15 +49,17 @@ body {
 
 .circles__logo {
   position: absolute;
-  top: rem(2px);
-  right: rem(17px);
+  top: rem(81px);
+  right: rem(13px);
 }
 
 // About section
 
 .about {
-  padding: 0 rem(34px);
-  margin-top: rem(56px);
+  padding: rem(81px) rem(34px) 0;
+  margin-top: rem(
+    -25px
+  ); // dark magic to reposition the section when clicking About link
   position: relative;
   overflow: hidden;
   color: $white;
@@ -147,8 +149,8 @@ body {
 // Projects section
 
 .projects {
-  padding: 0 rem(34px);
-  margin-top: rem(56px);
+  padding: rem(81px) rem(34px) 0;
+  margin-top: rem(-25px);
   position: relative;
   overflow: hidden;
   color: $white;
@@ -157,11 +159,61 @@ body {
     font-size: rem(30px);
     font-weight: 600;
   }
-  img {
+  &__display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(28px);
+  }
+  &__project {
+    position: relative;
+    width: rem(309px);
+    height: rem(201.61px);
+    & img {
+      position: absolute;
+      background-image: url('../../../assets/design/grain_effect_projects_section.svg');
+      background-size: auto auto;
+    }
+  }
+  &__image {
+    z-index: 5;
+    right: 0;
+    top: 0;
     width: rem(303.93px);
     height: rem(197.05px);
-    margin-left: rem(5px);
-    background: url('../../../assets/design/back_project1.png');
-    background-size: rem(303.93px) rem(197.05px);
+  }
+  &__deco {
+    z-index: 4;
+    left: 0;
+    bottom: 0;
+    width: rem(303.93px);
+    height: rem(197.05px);
+  }
+  &__hover {
+    z-index: 6;
+    padding: rem(31px) 1rem rem(17px);
+    width: rem(303.93px);
+    height: rem(197.05px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.9;
+    text-align: center;
+    background-color: #000;
+    backdrop-filter: blur(5px);
+    transition: opacity 0.1s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+    &-name {
+      font-size: rem(22px);
+      font-weight: 500;
+    }
+    &-desc {
+      font-size: rem(17px);
+    }
+    &-browse {
+      font-size: rem(22px);
+      font-weight: 600;
+    }
   }
 }
