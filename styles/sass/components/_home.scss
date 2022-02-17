@@ -48,6 +48,7 @@ body {
 // Background logo positionning
 
 .circles__logo {
+  z-index: -1;
   position: absolute;
   top: rem(81px);
   right: rem(13px);
@@ -160,6 +161,7 @@ body {
     font-weight: 600;
   }
   &__display {
+    margin-bottom: rem(90px);
     display: flex;
     flex-wrap: wrap;
     gap: rem(28px);
@@ -196,8 +198,9 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    opacity: 0.9;
+    opacity: 0;
     text-align: center;
+    color: #fff;
     background-color: #000;
     backdrop-filter: blur(5px);
     transition: opacity 0.1s ease-in-out;

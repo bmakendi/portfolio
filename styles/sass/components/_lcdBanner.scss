@@ -6,22 +6,22 @@
 .lcd {
   z-index: 10;
   height: rem(30px);
-  width: rem(1200px);
+  width: 100%;
   position: absolute;
-  top: rem(144px);
+  top: rem(561px);
   display: flex;
   align-items: center;
-  background: #000 url('../../../assets/design/lcd_ornament2.svg') space;
+  background: #000 url('../../../assets/design/lcd_ornament2.svg') 100%;
+  overflow: hidden;
   &__text {
-    display: flex;
-    gap: rem(60px);
-    align-items: center;
+    width: 100%;
     color: $greenLcd;
     font-family: Digital-7, sans-serif;
     font-size: rem(20px);
-    animation: marquee 28s linear infinite;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
   }
-  &--about {
+  &--down {
     top: unset;
     left: 0;
     bottom: rem(28px);
