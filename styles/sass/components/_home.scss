@@ -32,11 +32,13 @@ body {
     }
   }
   &__image {
+    width: 100%;
+    margin: rem(27px) 0 rem(25px);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: rem(27px) 0 rem(25px);
+
     img {
       z-index: 100;
       height: rem(370px);

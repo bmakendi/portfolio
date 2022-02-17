@@ -64,11 +64,12 @@ body {
   font-weight: 600;
 }
 .landing__image {
+  width: 100%;
+  margin: 1.6875rem 0 1.5625rem;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.6875rem 0 1.5625rem;
 }
 .landing__image img {
   z-index: 100;
@@ -368,7 +369,7 @@ body {
   height: 1.875rem;
   width: 100%;
   position: absolute;
-  top: 69%;
+  top: 9rem;
   display: flex;
   align-items: center;
   background: #000 url("../../../assets/design/lcd_ornament2.svg") 100%;
