@@ -17,6 +17,7 @@
     url('../../../assets/design/grain_effect_background_page.svg');
   transition: all 0.6s cubic-bezier(0.26, 0.01, 0, 0.75);
   background-size: 100%;
+  overscroll-behavior: none;
   &.active {
     z-index: 998;
     transform: translateX(0);

@@ -176,26 +176,25 @@ body {
     height: rem(201.61px);
     & img {
       position: absolute;
-      background-image: url('../../../assets/design/grain_effect_projects_section.svg');
-      background-size: auto auto;
+      background: url('../../../assets/design/grain_effect_projects_section.svg');
+      background-size: 100%;
     }
   }
   &__image {
-    z-index: 5;
+    z-index: 10;
     right: 0;
     top: 0;
     width: rem(303.93px);
     height: rem(197.05px);
   }
   &__deco {
-    z-index: 4;
     left: 0;
     bottom: 0;
     width: rem(303.93px);
     height: rem(197.05px);
   }
   &__hover {
-    z-index: 6;
+    z-index: 100;
     padding: rem(31px) 1rem rem(17px);
     width: rem(303.93px);
     height: rem(197.05px);
@@ -203,17 +202,17 @@ body {
     top: 0;
     right: 0;
     opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     color: #fff;
-    background-color: #000;
-    backdrop-filter: blur(5px);
-    transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.18s ease-in-out;
     &:hover {
-      opacity: 0.5;
+      opacity: 1;
+      backdrop-filter: blur(2px);
     }
     &-name {
       font-size: rem(22px);
-      font-weight: 500;
+      font-weight: 600;
     }
     &-desc {
       font-size: rem(17px);
@@ -229,6 +228,7 @@ body {
 
 .contact {
   padding: rem(81px) rem(34px) 0;
+  height: 100vh;
   position: relative;
   background: #000
     url('../../../assets/design/grain_effect_background_page.svg');

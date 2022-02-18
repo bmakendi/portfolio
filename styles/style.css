@@ -205,25 +205,24 @@ body {
 }
 .projects__project img {
   position: absolute;
-  background-image: url("../../../assets/design/grain_effect_projects_section.svg");
-  background-size: auto auto;
+  background: url("../../../assets/design/grain_effect_projects_section.svg");
+  background-size: 100%;
 }
 .projects__image {
-  z-index: 5;
+  z-index: 10;
   right: 0;
   top: 0;
   width: 18.995625rem;
   height: 12.315625rem;
 }
 .projects__deco {
-  z-index: 4;
   left: 0;
   bottom: 0;
   width: 18.995625rem;
   height: 12.315625rem;
 }
 .projects__hover {
-  z-index: 6;
+  z-index: 100;
   padding: 1.9375rem 1rem 1.0625rem;
   width: 18.995625rem;
   height: 12.315625rem;
@@ -231,18 +230,18 @@ body {
   top: 0;
   right: 0;
   opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   color: #fff;
-  background-color: #000;
-  backdrop-filter: blur(5px);
-  transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.18s ease-in-out;
 }
 .projects__hover:hover {
-  opacity: 0.5;
+  opacity: 1;
+  backdrop-filter: blur(2px);
 }
 .projects__hover-name {
   font-size: 1.375rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .projects__hover-desc {
   font-size: 1.0625rem;
@@ -254,6 +253,7 @@ body {
 
 .contact {
   padding: 5.0625rem 2.125rem 0;
+  height: 100vh;
   position: relative;
   background: #000 url("../../../assets/design/grain_effect_background_page.svg");
   background-size: 100%;
@@ -380,6 +380,7 @@ body {
   background: #000 url("../../../assets/design/grain_effect_background_page.svg");
   transition: all 0.6s cubic-bezier(0.26, 0.01, 0, 0.75);
   background-size: 100%;
+  overscroll-behavior: none;
 }
 .menu.active {
   z-index: 998;
