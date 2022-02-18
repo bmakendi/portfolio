@@ -1,4 +1,5 @@
 @use './functions' as *;
+@use './variables' as *;
 
 @mixin hovering-link($hoverColor, $opacity) {
   a::before {
@@ -16,5 +17,11 @@
   }
   a:hover::before {
     transform: scaleX(1);
+  }
+}
+
+@mixin laptop-layout {
+  @media all and (min-width: map-get($breakpoints, laptop)) {
+    @content;
   }
 }

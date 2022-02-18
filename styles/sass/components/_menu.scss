@@ -16,15 +16,35 @@
   transform: translateX(-100%);
   background: #000
     url('../../../assets/design/grain_effect_background_page.svg');
-  transition: all 0.6s cubic-bezier(0.26, 0.01, 0, 0.75);
+  transition: all 0.8s cubic-bezier(0.26, 0.01, 0, 0.75);
   background-size: 100%;
   overscroll-behavior: none;
+  @include laptop-layout {
+    width: rem(466px);
+    height: rem(505px);
+    padding: rem(76px) rem(73px) rem(76px) rem(93px);
+    border-radius: 10px;
+    top: rem(38px);
+    right: rem(52px);
+    left: unset;
+    bottom: unset;
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.26, 0.01, 0, 0.75);
+  }
   &.active {
     z-index: 998;
     transform: translateX(0);
+    @include laptop-layout {
+      transform: none;
+      opacity: 1;
+    }
   }
   &__items {
     margin-top: rem(150px);
+    @include laptop-layout {
+      margin-top: 0;
+    }
   }
   &__item {
     position: relative;
@@ -39,10 +59,16 @@
   }
   &__contact {
     padding-top: rem(50px);
+    @include laptop-layout {
+      padding: 0;
+    }
   }
   &__socials {
     display: flex;
     align-items: center;
     gap: rem(53px);
+    @include laptop-layout {
+      display: none;
+    }
   }
 }

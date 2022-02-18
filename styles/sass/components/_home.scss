@@ -12,6 +12,11 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+section {
+  @include laptop-layout {
+    min-height: 100vh;
+  }
+}
 // Landing page section
 
 .landing {

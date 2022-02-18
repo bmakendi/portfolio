@@ -1,5 +1,6 @@
 @use '../utils/variables' as *;
 @use '../utils/functions' as *;
+@use '../utils/mixins' as *;
 
 .header {
   z-index: 999;
@@ -11,9 +12,28 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  @include laptop-layout {
+    padding: rem(41px) rem(58px) rem(15px) rem(82px);
+  }
+  &__left-container {
+    display: flex;
+    align-items: center;
+    gap: rem(56px);
+  }
   &__title {
     color: $paleWhite;
     font-weight: 600;
+    @include laptop-layout {
+      font-size: rem(20px);
+    }
+  }
+  &__socials {
+    display: none;
+    @include laptop-layout {
+      display: flex;
+      align-items: center;
+      gap: rem(28px);
+    }
   }
   &__btn {
     width: rem(24px);
@@ -24,6 +44,11 @@
     justify-content: center;
     gap: rem(3px);
     cursor: pointer;
+    @include laptop-layout {
+      width: rem(30px);
+      height: rem(30px);
+      gap: rem(5px);
+    }
     & > span {
       display: block;
       width: 100%;
@@ -42,6 +67,9 @@
         top: 12px;
         transform: rotate(45deg);
         transition: transform 0.3s ease-in-out, top 0.3s 0.3s ease-in-out;
+        @include laptop-layout {
+          width: rem(30px);
+        }
       }
       .second {
         opacity: 0;
@@ -53,6 +81,9 @@
         top: 12px;
         transform: rotate(-45deg);
         transition: transform 0.3s ease-in-out, top 0.3s 0.3s ease-in-out;
+        @include laptop-layout {
+          width: rem(30px);
+        }
       }
     }
   }
