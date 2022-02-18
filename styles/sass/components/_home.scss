@@ -38,7 +38,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     img {
       z-index: 100;
       height: rem(370px);
@@ -54,6 +53,9 @@ body {
   position: absolute;
   top: rem(81px);
   right: rem(13px);
+  &--contact {
+    z-index: 0;
+  }
 }
 
 // About section
@@ -219,6 +221,52 @@ body {
     &-browse {
       font-size: rem(22px);
       font-weight: 600;
+    }
+  }
+}
+
+// Contact section
+
+.contact {
+  padding: rem(81px) rem(34px) 0;
+  margin-top: rem(-25px);
+  position: relative;
+  background: #000
+    url('../../../assets/design/grain_effect_background_page.svg');
+  background-size: 100%;
+  & * {
+    color: $white;
+  }
+  &__title {
+    margin-bottom: rem(82px);
+    font-size: rem(30px);
+    font-weight: 600;
+  }
+  &__links {
+    margin-bottom: rem(237px);
+    display: flex;
+    flex-direction: column;
+    gap: rem(43px);
+    font-size: rem(20px);
+    font-weight: 500;
+  }
+}
+
+// Footer
+
+.footer {
+  padding: rem(22px) 0 rem(27px);
+  border-top: 2px solid $cobaltBlue;
+  &__copyright {
+    margin-bottom: rem(22px);
+
+    display: flex;
+    justify-content: space-between;
+  }
+  &__designer {
+    font-size: rem(14px);
+    &-link {
+      text-decoration: underline $white;
     }
   }
 }
