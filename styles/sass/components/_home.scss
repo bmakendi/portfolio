@@ -228,7 +228,7 @@ body {
 
 .contact {
   padding: rem(81px) rem(34px) 0;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   background: #000
     url('../../../assets/design/grain_effect_background_page.svg');
