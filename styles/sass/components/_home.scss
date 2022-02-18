@@ -1,5 +1,6 @@
 @use '../utils/variables' as *;
 @use '../utils/functions' as *;
+@use '../utils/mixins' as *;
 @use '../base/fonts';
 
 // HOMEPAGE STYLING
@@ -248,6 +249,11 @@ body {
     gap: rem(43px);
     font-size: rem(20px);
     font-weight: 500;
+  }
+  &__link {
+    z-index: 5;
+    position: relative;
+    @include hovering-link($cobaltBlue, 0.6);
   }
 }
 
