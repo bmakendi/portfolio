@@ -186,6 +186,7 @@ body {
   .about__logos {
     max-width: 1920px;
     margin: auto;
+    gap: 1.5625rem;
   }
 }
 .about__logos img {
@@ -202,27 +203,63 @@ body {
   height: 4.4375rem;
   color: #00ccff;
 }
+@media all and (min-width: 1085px) {
+  .about__logo--react {
+    width: 5.9375rem;
+    height: 6.8125rem;
+  }
+}
 .about__logo--react img {
   width: 2.853125rem;
   height: 2.853125rem;
+}
+@media all and (min-width: 1085px) {
+  .about__logo--react img {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
 }
 .about__logo--js {
   width: 5.375rem;
   height: 4.4375rem;
   color: #ffdf00;
 }
+@media all and (min-width: 1085px) {
+  .about__logo--js {
+    width: 5.9375rem;
+    height: 6.8125rem;
+  }
+}
 .about__logo--js img {
   width: 2.853125rem;
   height: 2.853125rem;
+}
+@media all and (min-width: 1085px) {
+  .about__logo--js img {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
 }
 .about__logo--html {
   width: 3.8725rem;
   height: 4.443125rem;
   color: #e44d26;
 }
+@media all and (min-width: 1085px) {
+  .about__logo--html {
+    width: 5.9375rem;
+    height: 6.8125rem;
+  }
+}
 .about__logo--html img {
   width: 2.853125rem;
   height: 2.853125rem;
+}
+@media all and (min-width: 1085px) {
+  .about__logo--html img {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
 }
 .about__logo--css {
   width: 3.8725rem;
@@ -235,9 +272,21 @@ body {
     margin: 0;
   }
 }
+@media all and (min-width: 1085px) {
+  .about__logo--css {
+    width: 5.9375rem;
+    height: 6.8125rem;
+  }
+}
 .about__logo--css img {
   width: 2.0225rem;
   height: 2.853125rem;
+}
+@media all and (min-width: 1085px) {
+  .about__logo--css img {
+    width: 3.10125rem;
+    height: 4.375rem;
+  }
 }
 .about__logo--sass {
   width: 3.8725rem;
@@ -250,9 +299,21 @@ body {
     margin: 0;
   }
 }
+@media all and (min-width: 1085px) {
+  .about__logo--sass {
+    width: 5.9375rem;
+    height: 6.8125rem;
+  }
+}
 .about__logo--sass img {
   width: 3.804375rem;
   height: 2.853125rem;
+}
+@media all and (min-width: 1085px) {
+  .about__logo--sass img {
+    width: 5.833125rem;
+    height: 4.375rem;
+  }
 }
 
 .projects {
@@ -495,7 +556,15 @@ body {
     transform: translateX(100%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-70%);
+  }
+}
+@keyframes marquee-desktop {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-40%);
   }
 }
 @keyframes appearing-text {
@@ -643,7 +712,7 @@ body {
 @media all and (min-width: 1085px) {
   .lcd__text {
     font-size: 2.1875rem;
-    animation: marquee 20s linear infinite;
+    animation: marquee-desktop 18s linear infinite;
   }
 }
 .lcd--down {

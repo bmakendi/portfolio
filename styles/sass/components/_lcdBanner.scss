@@ -38,7 +38,7 @@
     animation: marquee 10s linear infinite;
     @include laptop-layout {
       font-size: rem(35px);
-      animation: marquee 20s linear infinite;
+      animation: marquee-desktop 18s linear infinite;
     }
   }
   &--down {

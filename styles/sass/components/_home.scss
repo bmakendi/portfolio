@@ -137,6 +137,7 @@ section {
     @include laptop-layout {
       max-width: 1920px;
       margin: auto;
+      gap: rem(25px);
     }
     img {
       height: rem(45.65px);
@@ -151,27 +152,51 @@ section {
       width: rem(72px);
       height: rem(71px);
       color: $react;
+      @include laptop-layout {
+        width: rem(95px);
+        height: rem(109px);
+      }
       img {
         width: rem(45.65px);
         height: rem(45.65px);
+        @include laptop-layout {
+          width: rem(70px);
+          height: rem(70px);
+        }
       }
     }
     &--js {
       width: rem(86px);
       height: rem(71px);
       color: $js;
+      @include laptop-layout {
+        width: rem(95px);
+        height: rem(109px);
+      }
       img {
         width: rem(45.65px);
         height: rem(45.65px);
+        @include laptop-layout {
+          width: rem(70px);
+          height: rem(70px);
+        }
       }
     }
     &--html {
       width: rem(61.96px);
       height: rem(71.09px);
       color: $html;
+      @include laptop-layout {
+        width: rem(95px);
+        height: rem(109px);
+      }
       img {
         width: rem(45.65px);
         height: rem(45.65px);
+        @include laptop-layout {
+          width: rem(70px);
+          height: rem(70px);
+        }
       }
     }
     &--css {
@@ -182,9 +207,17 @@ section {
       @media all and (min-width: 410px) {
         margin: 0;
       }
+      @include laptop-layout {
+        width: rem(95px);
+        height: rem(109px);
+      }
       img {
         width: rem(32.36px);
         height: rem(45.65px);
+        @include laptop-layout {
+          width: rem(49.62px);
+          height: rem(70px);
+        }
       }
     }
     &--sass {
@@ -195,9 +228,17 @@ section {
       @media all and (min-width: 500px) {
         margin: 0;
       }
+      @include laptop-layout {
+        width: rem(95px);
+        height: rem(109px);
+      }
       img {
         width: rem(60.87px);
         height: rem(45.65px);
+        @include laptop-layout {
+          width: rem(93.33px);
+          height: rem(70px);
+        }
       }
     }
   }

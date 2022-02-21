@@ -9,6 +9,8 @@ const header = document.querySelector('header');
 btn.addEventListener('click', () => {
   btn.classList.toggle('active');
   menu.classList.toggle('active');
+  if (menu.classList.contains('active')) menu.ariaHidden = 'false';
+  else menu.ariaHidden = 'true';
 });
 
 btn.addEventListener('keyup', e => {
@@ -18,6 +20,8 @@ btn.addEventListener('keyup', e => {
 headerBtn.addEventListener('click', () => {
   btn.classList.remove('active');
   menu.classList.remove('active');
+  if (menu.classList.contains('active')) menu.ariaHidden = 'false';
+  else menu.ariaHidden = 'true';
 });
 
 for (link of links) {
