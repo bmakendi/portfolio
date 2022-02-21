@@ -17,8 +17,6 @@ section {
     min-height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    max-width: 1920px;
-    margin: auto;
   }
 }
 // Landing page section
@@ -29,6 +27,8 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   @include laptop-layout {
+    max-width: 1920px;
+    margin: auto;
     flex-wrap: nowrap;
   }
   &__title {
@@ -97,24 +97,47 @@ section {
   position: relative;
   overflow: hidden;
   color: $white;
+  @include laptop-layout {
+    padding: rem(272px) rem(215px) 0;
+  }
   &__title {
     margin-bottom: rem(17px);
     font-size: rem(30px);
     font-weight: 600;
+    @include laptop-layout {
+      max-width: 1920px;
+      margin: auto;
+      margin-bottom: rem(10px);
+      font-size: rem(50px);
+    }
   }
   &__text {
     margin-bottom: rem(33px);
+    @include laptop-layout {
+      max-width: 1920px;
+      margin: auto;
+      margin-bottom: rem(125px);
+    }
   }
   &__stack {
     margin-bottom: rem(30px);
     font-size: rem(20px);
-    font-weight: 600;
+    font-weight: 500;
+    @include laptop-layout {
+      max-width: 1920px;
+      margin: auto;
+      margin-bottom: rem(63px);
+    }
   }
   &__logos {
     margin-bottom: rem(90px);
     display: flex;
     flex-wrap: wrap;
     gap: rem(19px);
+    @include laptop-layout {
+      max-width: 1920px;
+      margin: auto;
+    }
     img {
       height: rem(45.65px);
     }

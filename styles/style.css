@@ -54,8 +54,6 @@ body {
     min-height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    max-width: 1920px;
-    margin: auto;
   }
 }
 
@@ -67,6 +65,8 @@ body {
 }
 @media all and (min-width: 1085px) {
   .landing {
+    max-width: 1920px;
+    margin: auto;
     flex-wrap: nowrap;
   }
 }
@@ -136,24 +136,57 @@ body {
   overflow: hidden;
   color: #ffffff;
 }
+@media all and (min-width: 1085px) {
+  .about {
+    padding: 17rem 13.4375rem 0;
+  }
+}
 .about__title {
   margin-bottom: 1.0625rem;
   font-size: 1.875rem;
   font-weight: 600;
 }
+@media all and (min-width: 1085px) {
+  .about__title {
+    max-width: 1920px;
+    margin: auto;
+    margin-bottom: 0.625rem;
+    font-size: 3.125rem;
+  }
+}
 .about__text {
   margin-bottom: 2.0625rem;
+}
+@media all and (min-width: 1085px) {
+  .about__text {
+    max-width: 1920px;
+    margin: auto;
+    margin-bottom: 7.8125rem;
+  }
 }
 .about__stack {
   margin-bottom: 1.875rem;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
+}
+@media all and (min-width: 1085px) {
+  .about__stack {
+    max-width: 1920px;
+    margin: auto;
+    margin-bottom: 3.9375rem;
+  }
 }
 .about__logos {
   margin-bottom: 5.625rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.1875rem;
+}
+@media all and (min-width: 1085px) {
+  .about__logos {
+    max-width: 1920px;
+    margin: auto;
+  }
 }
 .about__logos img {
   height: 2.853125rem;
@@ -371,9 +404,7 @@ body {
 }
 @media all and (min-width: 1085px) {
   .header {
-    max-width: 1920px;
     padding: 2rem 3.625rem 2rem 5.125rem;
-    margin: auto;
   }
 }
 .header__left-container {
