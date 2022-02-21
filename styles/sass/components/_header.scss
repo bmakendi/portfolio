@@ -13,7 +13,9 @@
   align-items: center;
   background-color: transparent;
   @include laptop-layout {
-    padding: rem(41px) rem(58px) rem(15px) rem(82px);
+    max-width: 1920px;
+    padding: rem(32px) rem(58px) rem(32px) rem(82px);
+    margin: auto;
   }
   &__left-container {
     display: flex;

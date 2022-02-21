@@ -15,6 +15,10 @@ body {
 section {
   @include laptop-layout {
     min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    max-width: 1920px;
+    margin: auto;
   }
 }
 // Landing page section
@@ -24,6 +28,9 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  @include laptop-layout {
+    flex-wrap: nowrap;
+  }
   &__title {
     margin-top: rem(134px);
     padding: 0 rem(34px) rem(20px);
@@ -32,22 +39,38 @@ section {
     font-size: rem(43px);
     line-height: rem(47px);
     animation: appearing-text 0.6s ease-out forwards;
+    @include laptop-layout {
+      flex: 1;
+      margin: rem(312px) 0 0 rem(203px);
+      padding: 0;
+      font-size: rem(70px);
+      line-height: rem(80px);
+    }
     &--grey {
       color: $greyText;
       font-weight: 600;
     }
   }
   &__image {
+    flex: 1;
     width: 100%;
     margin: rem(27px) 0 rem(25px);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include laptop-layout {
+      margin: rem(151px) 0 0 rem(151px);
+      width: auto;
+    }
     img {
       z-index: 100;
       height: rem(370px);
       width: rem(375px);
+      @include laptop-layout {
+        width: rem(851.82px);
+        height: rem(839.68px);
+      }
     }
   }
 }
@@ -239,6 +262,9 @@ section {
   background: #000
     url('../../../assets/design/grain_effect_background_page.svg');
   background-size: 100%;
+  @include laptop-layout {
+    background-size: 40%;
+  }
   & * {
     color: $white;
   }

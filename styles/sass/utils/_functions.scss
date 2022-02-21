@@ -4,6 +4,10 @@
   @return math.div($value, $value * 0 + 1);
 }
 
+@function em($pxValue) {
+  @return #{math.div(stripUnit($pxValue), 16)}em;
+}
+
 @function rem($pxValue) {
   @return #{math.div(stripUnit($pxValue), 16)}rem;
 }

@@ -1,5 +1,6 @@
 @use '../utils/variables' as *;
 @use '../utils/functions' as *;
+@use '../utils/mixins' as *;
 @use '../base/fonts';
 @use '../utils/keyframes';
 
@@ -9,10 +10,25 @@
   width: 100%;
   position: absolute;
   top: rem(144px);
+  @include laptop-layout {
+    height: rem(44px);
+    top: rem(805px);
+  }
   display: flex;
   align-items: center;
-  background: #000 url('../../../assets/design/lcd_ornament2.svg') 100%;
+  background: #000 url('../../../assets/design/lcd_ornament2.svg');
   overflow: hidden;
+  &--mobile {
+    @include laptop-layout {
+      display: none;
+    }
+  }
+  &--desktop {
+    display: none;
+    @include laptop-layout {
+      display: flex;
+    }
+  }
   &__text {
     width: 100%;
     color: $greenLcd;
@@ -20,6 +36,10 @@
     font-size: rem(20px);
     white-space: nowrap;
     animation: marquee 10s linear infinite;
+    @include laptop-layout {
+      font-size: rem(35px);
+      animation: marquee 20s linear infinite;
+    }
   }
   &--down {
     top: unset;
