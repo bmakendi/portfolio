@@ -162,6 +162,7 @@ body {
     max-width: 1920px;
     margin: auto;
     margin-bottom: 7.8125rem;
+    margin-right: 43.3125rem;
   }
 }
 .about__stack {
@@ -323,10 +324,21 @@ body {
   overflow: hidden;
   color: #ffffff;
 }
+@media all and (min-width: 1085px) {
+  .projects {
+    padding: 17rem 12.6875rem 0;
+  }
+}
 .projects__title {
   margin-bottom: 1.5625rem;
   font-size: 1.875rem;
   font-weight: 600;
+}
+@media all and (min-width: 1085px) {
+  .projects__title {
+    margin: 0 0 3.75rem 0.75rem;
+    font-size: 3.125rem;
+  }
 }
 .projects__display {
   margin-bottom: 5.625rem;
@@ -334,10 +346,21 @@ body {
   flex-wrap: wrap;
   gap: 1.75rem;
 }
+@media all and (min-width: 1085px) {
+  .projects__display {
+    gap: 2.3125rem;
+  }
+}
 .projects__project {
   position: relative;
   width: 19.3125rem;
   height: 12.600625rem;
+}
+@media all and (min-width: 1085px) {
+  .projects__project {
+    width: 45.625rem;
+    height: 29.76875rem;
+  }
 }
 .projects__project img {
   position: absolute;
@@ -351,17 +374,32 @@ body {
   width: 18.995625rem;
   height: 12.315625rem;
 }
+@media all and (min-width: 1085px) {
+  .projects__image {
+    width: 44.876875rem;
+    height: 29.095rem;
+  }
+}
 .projects__deco {
   left: 0;
   bottom: 0;
   width: 18.995625rem;
   height: 12.315625rem;
 }
+@media all and (min-width: 1085px) {
+  .projects__deco {
+    width: 44.876875rem;
+    height: 29.095rem;
+  }
+}
 .projects__hover {
   z-index: 100;
   padding: 1.9375rem 1rem 1.0625rem;
   width: 18.995625rem;
   height: 12.315625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   top: 0;
   right: 0;
@@ -370,6 +408,12 @@ body {
   text-align: center;
   color: #fff;
   transition: opacity 0.18s ease-in-out;
+}
+@media all and (min-width: 1085px) {
+  .projects__hover {
+    width: 44.876875rem;
+    height: 29.095rem;
+  }
 }
 .projects__hover:hover {
   opacity: 1;
