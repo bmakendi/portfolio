@@ -48,5 +48,8 @@
     top: unset;
     left: 0;
     bottom: rem(28px);
+    @include bigScreen-layout {
+      bottom: rem(55px);
+    }
   }
 }

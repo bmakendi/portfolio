@@ -374,7 +374,7 @@ body {
 }
 @media all and (min-width: 1900px) {
   .projects {
-    padding: 17rem 12.6875rem 9.375rem;
+    padding: 17rem 12.6875rem 14.0625rem;
   }
 }
 .projects__title {
@@ -915,6 +915,11 @@ body {
   top: unset;
   left: 0;
   bottom: 1.75rem;
+}
+@media all and (min-width: 1900px) {
+  .lcd--down {
+    bottom: 3.4375rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
