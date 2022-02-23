@@ -12,6 +12,9 @@
   top: rem(144px);
   @include laptop-layout {
     height: rem(44px);
+    top: rem(605px);
+  }
+  @include bigScreen-layout {
     top: rem(805px);
   }
   display: flex;

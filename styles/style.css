@@ -82,6 +82,14 @@ body {
 @media all and (min-width: 1024px) {
   .landing__title {
     flex: 1;
+    margin: 13.25rem 0 0 12.6875rem;
+    padding: 0;
+    font-size: 3.75rem;
+    line-height: 4.375rem;
+  }
+}
+@media all and (min-width: 1900px) {
+  .landing__title {
     margin: 19.5rem 0 0 12.6875rem;
     padding: 0;
     font-size: 4.375rem;
@@ -103,8 +111,13 @@ body {
 }
 @media all and (min-width: 1024px) {
   .landing__image {
-    margin: 9.4375rem 0 0 9.4375rem;
+    margin: 3.1875rem 0 0 3.1875rem;
     width: auto;
+  }
+}
+@media all and (min-width: 1900px) {
+  .landing__image {
+    margin: 9.4375rem 0 0 9.4375rem;
   }
 }
 .landing__image img {
@@ -113,6 +126,12 @@ body {
   width: 23.4375rem;
 }
 @media all and (min-width: 1024px) {
+  .landing__image img {
+    width: 40.73875rem;
+    height: 39.98rem;
+  }
+}
+@media all and (min-width: 1900px) {
   .landing__image img {
     width: 53.23875rem;
     height: 52.48rem;
@@ -138,6 +157,11 @@ body {
 }
 @media all and (min-width: 1024px) {
   .about {
+    padding: 10.75rem 13.4375rem 0;
+  }
+}
+@media all and (min-width: 1900px) {
+  .about {
     padding: 17rem 13.4375rem 0;
   }
 }
@@ -161,8 +185,12 @@ body {
   .about__text {
     max-width: 1920px;
     margin: auto;
-    margin-bottom: 7.8125rem;
-    margin-right: 43.3125rem;
+    margin: 0 14.0625rem 4.6875rem 0;
+  }
+}
+@media all and (min-width: 1900px) {
+  .about__text {
+    margin: 0 43.3125rem 7.8125rem 0;
   }
 }
 .about__stack {
@@ -326,6 +354,11 @@ body {
 }
 @media all and (min-width: 1024px) {
   .projects {
+    padding: 10.75rem 12.6875rem 3.125rem;
+  }
+}
+@media all and (min-width: 1900px) {
+  .projects {
     padding: 17rem 12.6875rem 0;
   }
 }
@@ -358,6 +391,12 @@ body {
 }
 @media all and (min-width: 1024px) {
   .projects__project {
+    width: 39.375rem;
+    height: 23.51875rem;
+  }
+}
+@media all and (min-width: 1900px) {
+  .projects__project {
     width: 45.625rem;
     height: 29.76875rem;
   }
@@ -376,6 +415,12 @@ body {
 }
 @media all and (min-width: 1024px) {
   .projects__image {
+    width: 38.626875rem;
+    height: 22.845rem;
+  }
+}
+@media all and (min-width: 1900px) {
+  .projects__image {
     width: 44.876875rem;
     height: 29.095rem;
   }
@@ -387,6 +432,12 @@ body {
   height: 12.315625rem;
 }
 @media all and (min-width: 1024px) {
+  .projects__deco {
+    width: 38.626875rem;
+    height: 22.845rem;
+  }
+}
+@media all and (min-width: 1900px) {
   .projects__deco {
     width: 44.876875rem;
     height: 29.095rem;
@@ -410,6 +461,12 @@ body {
   transition: opacity 0.18s ease-in-out;
 }
 @media all and (min-width: 1024px) {
+  .projects__hover {
+    width: 38.626875rem;
+    height: 22.845rem;
+  }
+}
+@media all and (min-width: 1900px) {
   .projects__hover {
     width: 44.876875rem;
     height: 29.095rem;
@@ -739,6 +796,11 @@ body {
 @media all and (min-width: 1024px) {
   .lcd {
     height: 2.75rem;
+    top: 37.8125rem;
+  }
+}
+@media all and (min-width: 1900px) {
+  .lcd {
     top: 50.3125rem;
   }
 }

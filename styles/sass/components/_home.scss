@@ -41,6 +41,12 @@ section {
     animation: appearing-text 0.6s ease-out forwards;
     @include laptop-layout {
       flex: 1;
+      margin: rem(212px) 0 0 rem(203px);
+      padding: 0;
+      font-size: rem(60px);
+      line-height: rem(70px);
+    }
+    @include bigScreen-layout {
       margin: rem(312px) 0 0 rem(203px);
       padding: 0;
       font-size: rem(70px);
@@ -60,14 +66,21 @@ section {
     justify-content: center;
     align-items: center;
     @include laptop-layout {
-      margin: rem(151px) 0 0 rem(151px);
+      margin: rem(51px) 0 0 rem(51px);
       width: auto;
+    }
+    @include bigScreen-layout {
+      margin: rem(151px) 0 0 rem(151px);
     }
     img {
       z-index: 100;
       height: rem(370px);
       width: rem(375px);
       @include laptop-layout {
+        width: rem(651.82px);
+        height: rem(639.68px);
+      }
+      @include bigScreen-layout {
         width: rem(851.82px);
         height: rem(839.68px);
       }
@@ -98,6 +111,9 @@ section {
   overflow: hidden;
   color: $white;
   @include laptop-layout {
+    padding: rem(172px) rem(215px) 0;
+  }
+  @include bigScreen-layout {
     padding: rem(272px) rem(215px) 0;
   }
   &__title {
@@ -116,8 +132,10 @@ section {
     @include laptop-layout {
       max-width: 1920px;
       margin: auto;
-      margin-bottom: rem(125px);
-      margin-right: rem(693px);
+      margin: 0 rem(225px) rem(75px) 0;
+    }
+    @include bigScreen-layout {
+      margin: 0 rem(693px) rem(125px) 0;
     }
   }
   &__stack {
@@ -254,6 +272,9 @@ section {
   overflow: hidden;
   color: $white;
   @include laptop-layout {
+    padding: rem(172px) rem(203px) rem(50px);
+  }
+  @include bigScreen-layout {
     padding: rem(272px) rem(203px) 0;
   }
   &__title {
@@ -279,6 +300,10 @@ section {
     width: rem(309px);
     height: rem(201.61px);
     @include laptop-layout {
+      width: rem(630px);
+      height: rem(376.3px);
+    }
+    @include bigScreen-layout {
       width: rem(730px);
       height: rem(476.3px);
     }
@@ -295,6 +320,10 @@ section {
     width: rem(303.93px);
     height: rem(197.05px);
     @include laptop-layout {
+      width: rem(618.03px);
+      height: rem(365.52px);
+    }
+    @include bigScreen-layout {
       width: rem(718.03px);
       height: rem(465.52px);
     }
@@ -305,6 +334,10 @@ section {
     width: rem(303.93px);
     height: rem(197.05px);
     @include laptop-layout {
+      width: rem(618.03px);
+      height: rem(365.52px);
+    }
+    @include bigScreen-layout {
       width: rem(718.03px);
       height: rem(465.52px);
     }
@@ -326,6 +359,10 @@ section {
     color: #fff;
     transition: opacity 0.18s ease-in-out;
     @include laptop-layout {
+      width: rem(618.03px);
+      height: rem(365.52px);
+    }
+    @include bigScreen-layout {
       width: rem(718.03px);
       height: rem(465.52px);
     }
