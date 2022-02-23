@@ -2,7 +2,7 @@
 html {
   -webkit-text-size-adjust: 100%;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   html {
     scroll-snap-type: y mandatory;
   }
@@ -49,7 +49,7 @@ body {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   section {
     min-height: 100vh;
     scroll-snap-align: start;
@@ -63,7 +63,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .landing {
     max-width: 1920px;
     margin: auto;
@@ -79,7 +79,7 @@ body {
   line-height: 2.9375rem;
   animation: appearing-text 0.6s ease-out forwards;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .landing__title {
     flex: 1;
     margin: 19.5rem 0 0 12.6875rem;
@@ -101,7 +101,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .landing__image {
     margin: 9.4375rem 0 0 9.4375rem;
     width: auto;
@@ -112,7 +112,7 @@ body {
   height: 23.125rem;
   width: 23.4375rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .landing__image img {
     width: 53.23875rem;
     height: 52.48rem;
@@ -136,7 +136,7 @@ body {
   overflow: hidden;
   color: #ffffff;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about {
     padding: 17rem 13.4375rem 0;
   }
@@ -146,7 +146,7 @@ body {
   font-size: 1.875rem;
   font-weight: 600;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__title {
     max-width: 1920px;
     margin: auto;
@@ -157,7 +157,7 @@ body {
 .about__text {
   margin-bottom: 2.0625rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__text {
     max-width: 1920px;
     margin: auto;
@@ -170,7 +170,7 @@ body {
   font-size: 1.25rem;
   font-weight: 500;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__stack {
     max-width: 1920px;
     margin: auto;
@@ -183,7 +183,7 @@ body {
   flex-wrap: wrap;
   gap: 1.1875rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logos {
     max-width: 1920px;
     margin: auto;
@@ -204,7 +204,7 @@ body {
   height: 4.4375rem;
   color: #00ccff;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logo--react {
     width: 5.9375rem;
     height: 6.8125rem;
@@ -214,7 +214,7 @@ body {
   width: 2.853125rem;
   height: 2.853125rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logo--react img {
     width: 4.375rem;
     height: 4.375rem;
@@ -225,7 +225,7 @@ body {
   height: 4.4375rem;
   color: #ffdf00;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logo--js {
     width: 5.9375rem;
     height: 6.8125rem;
@@ -235,7 +235,7 @@ body {
   width: 2.853125rem;
   height: 2.853125rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logo--js img {
     width: 4.375rem;
     height: 4.375rem;
@@ -246,7 +246,7 @@ body {
   height: 4.443125rem;
   color: #e44d26;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logo--html {
     width: 5.9375rem;
     height: 6.8125rem;
@@ -256,7 +256,7 @@ body {
   width: 2.853125rem;
   height: 2.853125rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logo--html img {
     width: 4.375rem;
     height: 4.375rem;
@@ -273,7 +273,7 @@ body {
     margin: 0;
   }
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logo--css {
     width: 5.9375rem;
     height: 6.8125rem;
@@ -283,7 +283,7 @@ body {
   width: 2.0225rem;
   height: 2.853125rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logo--css img {
     width: 3.10125rem;
     height: 4.375rem;
@@ -300,7 +300,7 @@ body {
     margin: 0;
   }
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logo--sass {
     width: 5.9375rem;
     height: 6.8125rem;
@@ -310,7 +310,7 @@ body {
   width: 3.804375rem;
   height: 2.853125rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .about__logo--sass img {
     width: 5.833125rem;
     height: 4.375rem;
@@ -324,7 +324,7 @@ body {
   overflow: hidden;
   color: #ffffff;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .projects {
     padding: 17rem 12.6875rem 0;
   }
@@ -334,7 +334,7 @@ body {
   font-size: 1.875rem;
   font-weight: 600;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .projects__title {
     margin: 0 0 3.75rem 0.75rem;
     font-size: 3.125rem;
@@ -346,7 +346,7 @@ body {
   flex-wrap: wrap;
   gap: 1.75rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .projects__display {
     gap: 2.3125rem;
   }
@@ -356,7 +356,7 @@ body {
   width: 19.3125rem;
   height: 12.600625rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .projects__project {
     width: 45.625rem;
     height: 29.76875rem;
@@ -374,7 +374,7 @@ body {
   width: 18.995625rem;
   height: 12.315625rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .projects__image {
     width: 44.876875rem;
     height: 29.095rem;
@@ -386,7 +386,7 @@ body {
   width: 18.995625rem;
   height: 12.315625rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .projects__deco {
     width: 44.876875rem;
     height: 29.095rem;
@@ -409,7 +409,7 @@ body {
   color: #fff;
   transition: opacity 0.18s ease-in-out;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .projects__hover {
     width: 44.876875rem;
     height: 29.095rem;
@@ -438,7 +438,7 @@ body {
   background: #000 url("../../../assets/design/grain_effect_background_page.svg");
   background-size: 100%;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .contact {
     background-size: 40%;
   }
@@ -507,7 +507,7 @@ body {
   align-items: center;
   background-color: transparent;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .header {
     padding: 2rem 3.625rem 2rem 5.125rem;
   }
@@ -521,7 +521,7 @@ body {
   color: #e5e5e5;
   font-weight: 600;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .header__title {
     font-size: 1.25rem;
   }
@@ -529,7 +529,7 @@ body {
 .header__socials {
   display: none;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .header__socials {
     display: flex;
     align-items: center;
@@ -546,7 +546,7 @@ body {
   gap: 0.1875rem;
   cursor: pointer;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .header__btn {
     width: 1.875rem;
     height: 1.875rem;
@@ -573,7 +573,7 @@ body {
   transform: rotate(45deg);
   transition: transform 0.3s ease-in-out, top 0.3s 0.3s ease-in-out;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .header__btn.active .first {
     width: 1.875rem;
   }
@@ -589,7 +589,7 @@ body {
   transform: rotate(-45deg);
   transition: transform 0.3s ease-in-out, top 0.3s 0.3s ease-in-out;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .header__btn.active .third {
     width: 1.875rem;
   }
@@ -637,11 +637,9 @@ body {
   background-size: 100%;
   overscroll-behavior: none;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .menu {
-    width: 29.125rem;
-    height: 31.5625rem;
-    padding: 4.75rem 4.5625rem 4.75rem 5.8125rem;
+    padding: 3rem 2rem;
     border-radius: 10px;
     top: 2.375rem;
     right: 3.25rem;
@@ -649,14 +647,21 @@ body {
     bottom: unset;
     transform: none;
     opacity: 0;
-    transition: opacity 0.5s cubic-bezier(0.26, 0.01, 0, 0.75);
+    transition: opacity 0.25s cubic-bezier(0.26, 0.01, 0, 0.75);
+  }
+}
+@media all and (min-width: 1900px) {
+  .menu {
+    width: 29.125rem;
+    height: 31.5625rem;
+    padding: 4.75rem 4.5625rem 4.75rem 5.8125rem;
   }
 }
 .menu.active {
   z-index: 998;
   transform: translateX(0);
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .menu.active {
     transform: none;
     opacity: 1;
@@ -665,7 +670,7 @@ body {
 .menu__items {
   margin-top: 9.375rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .menu__items {
     margin-top: 0;
   }
@@ -679,6 +684,11 @@ body {
 }
 .menu__item-title {
   color: #a9a9a9;
+}
+@media all and (min-width: 1024px) {
+  .menu__item--last {
+    margin: 0;
+  }
 }
 .menu__item a::before {
   z-index: -1;
@@ -699,7 +709,7 @@ body {
 .menu__contact {
   padding-top: 3.125rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .menu__contact {
     padding: 0;
   }
@@ -709,7 +719,7 @@ body {
   align-items: center;
   gap: 3.3125rem;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .menu__socials {
     display: none;
   }
@@ -726,13 +736,13 @@ body {
   background: #000 url("../../../assets/design/lcd_ornament2.svg");
   overflow: hidden;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .lcd {
     height: 2.75rem;
     top: 50.3125rem;
   }
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .lcd--mobile {
     display: none;
   }
@@ -740,7 +750,7 @@ body {
 .lcd--desktop {
   display: none;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .lcd--desktop {
     display: flex;
   }
@@ -753,7 +763,7 @@ body {
   white-space: nowrap;
   animation: marquee 10s linear infinite;
 }
-@media all and (min-width: 1085px) {
+@media all and (min-width: 1024px) {
   .lcd__text {
     font-size: 2.1875rem;
     animation: marquee-desktop 18s linear infinite;

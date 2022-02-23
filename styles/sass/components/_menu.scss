@@ -20,9 +20,7 @@
   background-size: 100%;
   overscroll-behavior: none;
   @include laptop-layout {
-    width: rem(466px);
-    height: rem(505px);
-    padding: rem(76px) rem(73px) rem(76px) rem(93px);
+    padding: 3rem 2rem;
     border-radius: 10px;
     top: rem(38px);
     right: rem(52px);
@@ -30,7 +28,12 @@
     bottom: unset;
     transform: none;
     opacity: 0;
-    transition: opacity 0.5s cubic-bezier(0.26, 0.01, 0, 0.75);
+    transition: opacity 0.25s cubic-bezier(0.26, 0.01, 0, 0.75);
+  }
+  @include bigScreen-layout {
+    width: rem(466px);
+    height: rem(505px);
+    padding: rem(76px) rem(73px) rem(76px) rem(93px);
   }
   &.active {
     z-index: 998;
@@ -54,6 +57,11 @@
     color: #fff;
     &-title {
       color: $greyText;
+    }
+    &--last {
+      @include laptop-layout {
+        margin: 0;
+      }
     }
     @include hovering-link($greenLcd, 0.5);
   }
