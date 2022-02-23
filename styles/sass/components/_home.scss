@@ -98,6 +98,15 @@ section {
   &--contact {
     z-index: 0;
   }
+  @include laptop-layout {
+    width: rem(300px);
+    height: rem(300px);
+    top: rem(122px);
+    right: rem(100px);
+  }
+  @include bigScreen-layout {
+    top: rem(221px);
+  }
 }
 
 // About section
@@ -116,13 +125,17 @@ section {
   @include bigScreen-layout {
     padding: rem(272px) rem(215px) 0;
   }
+  &__description {
+    @include laptop-layout {
+      max-width: 1920px;
+      margin: auto;
+    }
+  }
   &__title {
     margin-bottom: rem(17px);
     font-size: rem(30px);
     font-weight: 600;
     @include laptop-layout {
-      max-width: 1920px;
-      margin: auto;
       margin-bottom: rem(10px);
       font-size: rem(50px);
     }
@@ -130,8 +143,6 @@ section {
   &__text {
     margin-bottom: rem(33px);
     @include laptop-layout {
-      max-width: 1920px;
-      margin: auto;
       margin: 0 rem(225px) rem(75px) 0;
     }
     @include bigScreen-layout {
@@ -272,10 +283,10 @@ section {
   overflow: hidden;
   color: $white;
   @include laptop-layout {
-    padding: rem(172px) rem(203px) rem(50px);
+    padding: rem(172px) rem(203px) rem(150px);
   }
   @include bigScreen-layout {
-    padding: rem(272px) rem(203px) 0;
+    padding: rem(272px) rem(203px) rem(150px);
   }
   &__title {
     margin-bottom: rem(25px);
@@ -285,6 +296,11 @@ section {
       margin: 0 0 rem(60px) rem(12px);
       font-size: rem(50px);
     }
+    @include bigScreen-layout {
+      max-width: 1920px;
+      margin: auto;
+      margin-bottom: rem(60px);
+    }
   }
   &__display {
     margin-bottom: rem(90px);
@@ -293,6 +309,10 @@ section {
     gap: rem(28px);
     @include laptop-layout {
       gap: rem(37px);
+    }
+    @include bigScreen-layout {
+      max-width: 1920px;
+      margin: auto;
     }
   }
   &__project {
@@ -361,6 +381,7 @@ section {
     @include laptop-layout {
       width: rem(618.03px);
       height: rem(365.52px);
+      padding: rem(90px) 1rem;
     }
     @include bigScreen-layout {
       width: rem(718.03px);
@@ -373,6 +394,12 @@ section {
     &-name {
       font-size: rem(22px);
       font-weight: 600;
+      @include laptop-layout {
+        font-size: rem(26px);
+      }
+      @include bigScreen-layout {
+        font-size: rem(36px);
+      }
     }
     &-desc {
       font-size: rem(17px);
@@ -380,6 +407,12 @@ section {
     &-browse {
       font-size: rem(22px);
       font-weight: 600;
+      @include laptop-layout {
+        font-size: rem(26px);
+      }
+      @include bigScreen-layout {
+        font-size: rem(36px);
+      }
     }
   }
 }
@@ -394,10 +427,21 @@ section {
     url('../../../assets/design/grain_effect_background_page.svg');
   background-size: 100%;
   @include laptop-layout {
+    padding: rem(172px) rem(150px) 0;
     background-size: 40%;
+  }
+  @include bigScreen-layout {
+    padding: rem(272px) rem(203px) 0;
   }
   & * {
     color: $white;
+  }
+  &__content {
+    @include laptop-layout {
+      padding: 0 rem(65px);
+      max-width: 1920px;
+      margin: auto;
+    }
   }
   &__title {
     margin-bottom: rem(82px);
@@ -411,6 +455,12 @@ section {
     gap: rem(43px);
     font-size: rem(20px);
     font-weight: 500;
+    @include laptop-layout {
+      margin-bottom: rem(180px);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 300px;
+    }
   }
   &__link {
     z-index: 5;
@@ -424,6 +474,12 @@ section {
 .footer {
   padding: rem(22px) 0 rem(27px);
   border-top: 2px solid $cobaltBlue;
+  @include laptop-layout {
+    padding-top: rem(77px);
+  }
+  @include bigScreen-layout {
+    padding-top: rem(87px);
+  }
   &__copyright {
     margin-bottom: rem(22px);
 

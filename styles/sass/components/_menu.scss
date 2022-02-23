@@ -20,10 +20,10 @@
   background-size: 100%;
   overscroll-behavior: none;
   @include laptop-layout {
-    padding: 3rem 2rem;
+    padding: 5rem 2rem 3rem;
     border-radius: 10px;
-    top: rem(38px);
-    right: rem(52px);
+    top: rem(25px);
+    right: rem(50px);
     left: unset;
     bottom: unset;
     transform: none;
