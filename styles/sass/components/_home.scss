@@ -120,7 +120,7 @@ section {
   overflow: hidden;
   color: $white;
   @include laptop-layout {
-    padding: rem(172px) rem(215px) 0;
+    padding: rem(172px) rem(215px) 4.75rem;
   }
   @include bigScreen-layout {
     padding: rem(272px) rem(215px) 0;

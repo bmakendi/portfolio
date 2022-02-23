@@ -170,7 +170,7 @@ body {
 }
 @media all and (min-width: 1024px) {
   .about {
-    padding: 10.75rem 13.4375rem 0;
+    padding: 10.75rem 13.4375rem 4.75rem;
   }
 }
 @media all and (min-width: 1900px) {
