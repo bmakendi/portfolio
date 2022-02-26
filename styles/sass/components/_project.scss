@@ -1,0 +1,117 @@
+@use '../utils/variables' as *;
+@use '../utils/functions' as *;
+@use '../utils/mixins' as *;
+@use '../base/fonts';
+
+.header--project {
+  padding: rem(30px) rem(30px) rem(5px) rem(12px);
+  background: #000
+    url('../../../assets/design/grain_effect_background_page.svg');
+  background-size: 100%;
+  .header__left-container {
+    display: none;
+  }
+}
+
+.back-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(50px);
+  height: rem(50px);
+  border: 2px solid $cobaltBlue;
+  border-radius: 50%;
+  transition: transform 0.1s ease-in-out;
+  &:hover {
+    transform: scale(0.95);
+    background-color: rgba($color: $backArrowHover, $alpha: 0.23);
+  }
+}
+
+.circles__logo--project {
+  top: rem(29px);
+  right: rem(-51.07px);
+}
+
+.project-page {
+  min-height: 100vh;
+  background: #000
+    url('../../../assets/design/grain_effect_background_page.svg');
+  background-size: 100%;
+  color: $white;
+  @include laptop-layout {
+    background-size: 40%;
+  }
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  padding: rem(85px) rem(36px) rem(38px);
+  &__title {
+    margin-bottom: rem(27px);
+    font-size: rem(30px);
+    font-weight: 500;
+  }
+  &__links {
+    margin-bottom: rem(27px);
+    display: flex;
+    flex-flow: wrap column;
+    gap: rem(20px);
+    font-size: rem(22px);
+    font-weight: 500;
+  }
+  &__link {
+    position: relative;
+    @include hovering-link($cobaltBlue, 0.6);
+    &--github {
+      a {
+        display: flex;
+        align-items: center;
+        gap: rem(14px);
+      }
+    }
+  }
+  &__technos {
+    margin-bottom: rem(20px);
+    display: flex;
+    flex-flow: column wrap;
+    gap: rem(20px);
+  }
+  &__techno {
+    display: flex;
+    align-items: center;
+    gap: rem(5px);
+    font-size: rem(20px);
+    font-weight: 500;
+  }
+  &__techno--chip {
+    width: 21px;
+    height: 21px;
+  }
+  &__description {
+    margin-bottom: rem(34px);
+  }
+  &__videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: rem(30px);
+  }
+  &__video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(20px);
+    &-description {
+      font-weight: 500;
+      color: $figcaption;
+    }
+  }
+}
+
+.footer--project {
+  margin: 0 rem(36px);
+}

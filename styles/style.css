@@ -954,4 +954,130 @@ body {
   }
 }
 
+.header--project {
+  padding: 1.875rem 1.875rem 0.3125rem 0.75rem;
+  background: #000 url("../../../assets/design/grain_effect_background_page.svg");
+  background-size: 100%;
+}
+.header--project .header__left-container {
+  display: none;
+}
+
+.back-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 2px solid #2a7ab0;
+  border-radius: 50%;
+  transition: transform 0.1s ease-in-out;
+}
+.back-arrow:hover {
+  transform: scale(0.95);
+  background-color: rgba(196, 196, 196, 0.23);
+}
+
+.circles__logo--project {
+  top: 1.8125rem;
+  right: -3.191875rem;
+}
+
+.project-page {
+  min-height: 100vh;
+  background: #000 url("../../../assets/design/grain_effect_background_page.svg");
+  background-size: 100%;
+  color: #ffffff;
+}
+@media all and (min-width: 1024px) {
+  .project-page {
+    background-size: 40%;
+  }
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  padding: 5.3125rem 2.25rem 2.375rem;
+}
+.project__title {
+  margin-bottom: 1.6875rem;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+.project__links {
+  margin-bottom: 1.6875rem;
+  display: flex;
+  flex-flow: wrap column;
+  gap: 1.25rem;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+.project__link {
+  position: relative;
+}
+.project__link a::before {
+  z-index: -1;
+  content: "";
+  width: 3.348125rem;
+  height: 1.875rem;
+  position: absolute;
+  left: -10px;
+  background-color: rgba(42, 122, 176, 0.6);
+  border-radius: 35px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.project__link a:hover::before {
+  transform: scaleX(1);
+}
+.project__link--github a {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+.project__technos {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1.25rem;
+}
+.project__techno {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.project__techno--chip {
+  width: 21px;
+  height: 21px;
+}
+.project__description {
+  margin-bottom: 2.125rem;
+}
+.project__videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+}
+.project__video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.project__video-description {
+  font-weight: 500;
+  color: #898989;
+}
+
+.footer--project {
+  margin: 0 2.25rem;
+}
+
 /*# sourceMappingURL=style.css.map */

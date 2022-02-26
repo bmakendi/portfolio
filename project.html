@@ -27,7 +27,207 @@
     <link rel="stylesheet" href="styles/style.css" />
     <title>Bryan Makendi - Front-end Developer</title>
   </head>
-  <body>
+  <body class="project-page">
+    <header class="header header--project">
+      <a href="index.html#projects">
+        <div class="back-arrow">
+          <img src="./assets/design/back_arrow.svg" alt="Back arrow" />
+        </div>
+      </a>
+      <div class="header__left-container">
+        <a href="#landing" id="headerBtn">
+          <p class="header__title">Bryan Makendi</p>
+        </a>
+        <div class="header__socials">
+          <a
+            href="https://www.linkedin.com/in/bryan-makendi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/design/linkedinLogo.svg"
+              alt="Logo LinkedIn"
+              class="header__social"
+            />
+          </a>
+          <a
+            href="https://github.com/bmakendi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/design/githubLogo.svg"
+              alt="Logo Github"
+              class="header__social"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="header__btn" id="menu-btn" tabindex="0">
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+      </div>
+    </header>
+    <nav class="menu" id="menu" aria-hidden="true">
+      <div class="menu__items">
+        <p class="menu__item">
+          <a href="index.html#about" class="link">About me</a>
+        </p>
+        <p class="menu__item">
+          <a href="index.html#projects" class="link"> Projects </a>
+        </p>
+        <div class="menu__contact">
+          <p class="menu__item menu__item-title">CONTACT</p>
+          <p class="menu__item">
+            <a
+              href="mailto:bryan.makendi@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              bryan.makendi@gmail.com
+            </a>
+          </p>
+          <p class="menu__item menu__item--last">
+            <a
+              href="assets/files/CV_Makendi_Bryan_DeveloppeurFrontend.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              My Resume
+            </a>
+          </p>
+          <div class="menu__socials">
+            <a
+              href="https://www.linkedin.com/in/bryan-makendi/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="assets/design/linkedinLogo.svg"
+                alt="Logo LinkedIn"
+                class="menu__social"
+              />
+            </a>
+            <a
+              href="https://github.com/bmakendi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="assets/design/githubLogo.svg"
+                alt="Logo Github"
+                class="menu__social"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="project">
+      <img
+        src="assets/design/tourbillon_mobile.svg"
+        alt="Logo as a background decoration"
+        class="circles__logo circles__logo--project"
+      />
+      <h1 class="project__title" id="project-title">
+        <!-- Inject project name here -->
+      </h1>
+      <div class="project__links">
+        <p class="project__link project__link--github">
+          <!-- Inject github link here -->
+          <a href="#" id="github-link">
+            <span>Github link</span>
+            <img src="./assets/design/githubLogo.svg" alt="Github logo" />
+          </a>
+        </p>
+        <p class="project__link project__link--website">
+          <!-- Inject website link here if there is one -->
+          <a href="#"> Website link </a>
+        </p>
+      </div>
+      <ul class="project__technos" id="technos">
+        <!-- Inject technos used here -->
+        <li class="project__techno">
+          <img
+            src="assets/design/chip.svg"
+            alt="Gradient decoration"
+            class="project__techno--chip"
+          />React.js
+        </li>
+        <li class="project__techno">
+          <img
+            src="assets/design/chip.svg"
+            alt="Gradient decoration"
+            class="project__techno--chip"
+          />Node.js
+        </li>
+        <li class="project__techno">
+          <img
+            src="assets/design/chip.svg"
+            alt="Gradient decoration"
+            class="project__techno--chip"
+          />Express.js
+        </li>
+        <li class="project__techno">
+          <img
+            src="assets/design/chip.svg"
+            alt="Gradient decoration"
+            class="project__techno--chip"
+          />MySql
+        </li>
+      </ul>
+      <p class="project__description" id="project-description">
+        <!-- Inject project description here -->
+        Création d'un réseau social interne pour une entreprise. Possibilité de
+        céer un compte, se connecter, ajouter des posts. les commenter et likes,
+        ainsi que les modifier. Ajout d'une photo de profil ou non et dark mode
+        disponible.
+      </p>
+      <div class="project__videos">
+        <figure class="project__video project__video--desktop">
+          <iframe
+            src="https://player.vimeo.com/video/682228174?h=585e5910b5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Reservia"
+          ></iframe>
+          <figcaption class="project__video-description">
+            Desktop demo
+          </figcaption>
+        </figure>
+        <figure class="project__video project__video--mobile">
+          <iframe
+            src="https://player.vimeo.com/video/682228174?h=585e5910b5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Reservia"
+          ></iframe>
+          <figcaption class="project__video-description">
+            Mobile demo
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer class="footer footer--project">
+      <div class="footer__copyright">
+        <p>© Bryan Makendi</p>
+        <p>2022</p>
+      </div>
+      <p class="footer__designer">
+        Design by
+        <a
+          href="https://www.thedesigngeek.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__designer-link"
+          >TheDesignGeek</a
+        >
+      </p>
+    </footer>
     <script type="module" src="scripts/project.js"></script>
+    <script src="scripts/menu.js" defer></script>
   </body>
 </html>

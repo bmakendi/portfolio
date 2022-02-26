@@ -6,6 +6,7 @@ const main = () => {
   const param = url.searchParams.get('id');
   const project = getProject(param);
   console.log(project);
+  title(project.name);
 };
 
 const getProject = id => {
@@ -14,6 +15,11 @@ const getProject = id => {
       return project;
     }
   }
+};
+
+const title = projectName => {
+  const h1 = document.getElementById('project-title');
+  h1.innerText = projectName;
 };
 
 main();
