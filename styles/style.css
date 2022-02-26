@@ -962,6 +962,11 @@ body {
 .header--project .header__left-container {
   display: none;
 }
+@media all and (min-width: 1024px) {
+  .header--project {
+    background-size: 40%;
+  }
+}
 
 .back-arrow {
   display: flex;

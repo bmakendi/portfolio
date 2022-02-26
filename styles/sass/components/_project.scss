@@ -11,6 +11,9 @@
   .header__left-container {
     display: none;
   }
+  @include laptop-layout {
+    background-size: 40%;
+  }
 }
 
 .back-arrow {
