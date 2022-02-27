@@ -963,6 +963,11 @@ body {
   display: none;
 }
 @media all and (min-width: 1024px) {
+  .header--project .header__left-container {
+    display: flex;
+  }
+}
+@media all and (min-width: 1024px) {
   .header--project {
     background-size: 40%;
   }
@@ -981,6 +986,11 @@ body {
 .back-arrow:hover {
   transform: scale(0.95);
   background-color: rgba(196, 196, 196, 0.23);
+}
+@media all and (min-width: 1024px) {
+  .back-arrow {
+    position: absolute;
+  }
 }
 
 .circles__logo--project {
@@ -1005,10 +1015,20 @@ body {
   overflow: hidden;
   padding: 5.3125rem 2.25rem 2.375rem;
 }
+@media all and (min-width: 1900px) {
+  .project {
+    padding: 11.5rem 13.4375rem 7.875rem;
+  }
+}
 .project__title {
   margin-bottom: 1.6875rem;
   font-size: 1.875rem;
   font-weight: 500;
+}
+@media all and (min-width: 1900px) {
+  .project__title {
+    font-size: 3.125rem;
+  }
 }
 .project__links {
   margin-bottom: 1.6875rem;
@@ -1048,6 +1068,11 @@ body {
   flex-flow: column wrap;
   gap: 1.25rem;
 }
+@media all and (min-width: 1024px) {
+  .project__technos {
+    flex-direction: row;
+  }
+}
 .project__techno {
   display: flex;
   align-items: center;
@@ -1065,9 +1090,14 @@ body {
 .project__videos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 1.875rem;
+}
+@media all and (min-width: 1900px) {
+  .project__videos iframe {
+    width: 45.625rem;
+    height: 25.66375rem;
+  }
 }
 .project__video {
   display: flex;
@@ -1083,6 +1113,11 @@ body {
 
 .footer--project {
   margin: 0 2.25rem;
+}
+@media all and (min-width: 1900px) {
+  .footer--project {
+    margin: 0 13.4375rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

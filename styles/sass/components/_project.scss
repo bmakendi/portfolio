@@ -10,6 +10,9 @@
   background-size: 100%;
   .header__left-container {
     display: none;
+    @include laptop-layout {
+      display: flex;
+    }
   }
   @include laptop-layout {
     background-size: 40%;
@@ -28,6 +31,9 @@
   &:hover {
     transform: scale(0.95);
     background-color: rgba($color: $backArrowHover, $alpha: 0.23);
+  }
+  @include laptop-layout {
+    position: absolute;
   }
 }
 
@@ -51,10 +57,16 @@
   position: relative;
   overflow: hidden;
   padding: rem(85px) rem(36px) rem(38px);
+  @include bigScreen-layout {
+    padding: rem(184px) rem(215px) rem(126px);
+  }
   &__title {
     margin-bottom: rem(27px);
     font-size: rem(30px);
     font-weight: 500;
+    @include bigScreen-layout {
+      font-size: rem(50px);
+    }
   }
   &__links {
     margin-bottom: rem(27px);
@@ -80,6 +92,9 @@
     display: flex;
     flex-flow: column wrap;
     gap: rem(20px);
+    @include laptop-layout {
+      flex-direction: row;
+    }
   }
   &__techno {
     display: flex;
@@ -98,9 +113,14 @@
   &__videos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     gap: rem(30px);
+    @include bigScreen-layout {
+      iframe {
+        width: rem(730px);
+        height: rem(410.62px);
+      }
+    }
   }
   &__video {
     display: flex;
@@ -117,4 +137,7 @@
 
 .footer--project {
   margin: 0 rem(36px);
+  @include bigScreen-layout {
+    margin: 0 rem(215px);
+  }
 }
