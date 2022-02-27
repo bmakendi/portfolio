@@ -428,10 +428,11 @@ section {
   background-size: 100%;
   @include laptop-layout {
     padding: rem(172px) rem(150px) 0;
-    background-size: 40%;
+    background-size: 60%;
   }
   @include bigScreen-layout {
     padding: rem(272px) rem(203px) 0;
+    background-size: 40%;
   }
   & * {
     color: $white;

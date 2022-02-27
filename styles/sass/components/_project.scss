@@ -76,7 +76,7 @@
   background-size: 100%;
   color: $white;
   @include laptop-layout {
-    background-size: 70%;
+    background-size: 60%;
   }
   @include bigScreen-layout {
     background-size: 40%;
@@ -172,6 +172,7 @@
     align-items: center;
     gap: rem(30px);
     @include laptop-layout {
+      flex-wrap: nowrap;
       justify-content: center;
       iframe {
         width: rem(530px);
