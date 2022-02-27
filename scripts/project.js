@@ -5,7 +5,6 @@ const main = () => {
   const url = new URL(window.location.href);
   const param = url.searchParams.get('id');
   const project = getProject(param);
-  console.log(project);
   title(project.name);
   githubLink(project.githubLink);
   websiteLink(project.webLink);
