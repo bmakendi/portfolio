@@ -11,6 +11,7 @@ const main = () => {
   websiteLink(project.webLink);
   technosList(project.technos);
   projectDescription(project.description);
+  projectVideos(project.video, project.mobileVideo, project.name);
 };
 
 const getProject = id => {
@@ -70,4 +71,14 @@ const projectDescription = description => {
   descriptionContainer.innerText = description;
 };
 
+const projectVideos = (desktopVid, mobileVid, projectName) => {
+  const desktop = document.getElementById('desktop_video');
+  const mobile = document.getElementById('mobile_video');
+
+  desktop.setAttribute('title', projectName);
+  mobile.setAttribute('title', projectName);
+
+  desktop.setAttribute('src', desktopVid);
+  mobile.setAttribute('src', mobileVid);
+};
 main();
