@@ -4,10 +4,11 @@
 @use '../base/fonts';
 
 .header--project {
-  padding: rem(30px) rem(30px) rem(5px) rem(12px);
+  padding: rem(43px) rem(30px) rem(22px) rem(12px);
   background: #000
     url('../../../assets/design/grain_effect_background_page.svg');
   background-size: 100%;
+  justify-content: flex-end;
   .header__left-container {
     display: none;
     @include laptop-layout {
@@ -15,11 +16,20 @@
     }
   }
   @include laptop-layout {
+    padding: rem(30px) rem(41px) rem(16px) rem(50px);
+    justify-content: space-between;
+  }
+  @include bigScreen-layout {
+    padding: rem(30px) rem(52px) rem(28px) rem(89px);
     background-size: 40%;
   }
 }
 
 .back-arrow {
+  z-index: 10000;
+  position: absolute;
+  top: rem(30px);
+  left: rem(12px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,13 +43,30 @@
     background-color: rgba($color: $backArrowHover, $alpha: 0.23);
   }
   @include laptop-layout {
-    position: absolute;
+    width: rem(60px);
+    height: rem(60px);
+    top: rem(103px);
+    left: rem(50px);
+  }
+  @include bigScreen-layout {
+    width: rem(70px);
+    height: rem(70px);
+    top: rem(114px);
+    left: rem(89px);
   }
 }
 
 .circles__logo--project {
   top: rem(29px);
   right: rem(-51.07px);
+  @include laptop-layout {
+    top: rem(-42px);
+    right: rem(-136px);
+  }
+  @include bigScreen-layout {
+    top: rem(-22px);
+    right: rem(-126px);
+  }
 }
 
 .project-page {
@@ -49,6 +76,9 @@
   background-size: 100%;
   color: $white;
   @include laptop-layout {
+    background-size: 70%;
+  }
+  @include bigScreen-layout {
     background-size: 40%;
   }
 }
@@ -57,11 +87,26 @@
   position: relative;
   overflow: hidden;
   padding: rem(85px) rem(36px) rem(38px);
+  @include laptop-layout {
+    padding: rem(134px) rem(165px) rem(87px);
+  }
   @include bigScreen-layout {
     padding: rem(184px) rem(215px) rem(126px);
   }
-  &__title {
+  &__upper-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: rem(27px);
     margin-bottom: rem(27px);
+    @include laptop-layout {
+      max-width: 1490px;
+      margin: 0 auto rem(27px);
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__title {
     font-size: rem(30px);
     font-weight: 500;
     @include bigScreen-layout {
@@ -69,12 +114,15 @@
     }
   }
   &__links {
-    margin-bottom: rem(27px);
     display: flex;
     flex-flow: wrap column;
     gap: rem(20px);
     font-size: rem(22px);
     font-weight: 500;
+    @include laptop-layout {
+      flex-direction: row;
+      gap: rem(30px);
+    }
   }
   &__link {
     position: relative;
@@ -95,6 +143,10 @@
     @include laptop-layout {
       flex-direction: row;
     }
+    @include bigScreen-layout {
+      max-width: 1490px;
+      margin: 0 auto rem(20px);
+    }
   }
   &__techno {
     display: flex;
@@ -109,12 +161,23 @@
   }
   &__description {
     margin-bottom: rem(34px);
+    @include bigScreen-layout {
+      max-width: 1490px;
+      margin: 0 auto rem(34px);
+    }
   }
   &__videos {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: rem(30px);
+    @include laptop-layout {
+      justify-content: center;
+      iframe {
+        width: rem(530px);
+        height: rem(310.62px);
+      }
+    }
     @include bigScreen-layout {
       iframe {
         width: rem(730px);
@@ -137,6 +200,9 @@
 
 .footer--project {
   margin: 0 rem(36px);
+  @include laptop-layout {
+    margin: 0 rem(165px);
+  }
   @include bigScreen-layout {
     margin: 0 rem(215px);
   }
