@@ -1003,6 +1003,7 @@ body {
   .header--project {
     padding: 1.875rem 2.5625rem 1rem 3.125rem;
     justify-content: space-between;
+    background-size: 60%;
   }
 }
 @media all and (min-width: 1900px) {
@@ -1014,7 +1015,7 @@ body {
 
 .back-arrow {
   z-index: 10000;
-  position: absolute;
+  position: fixed;
   top: 1.875rem;
   left: 0.75rem;
   display: flex;

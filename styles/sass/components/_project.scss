@@ -18,6 +18,7 @@
   @include laptop-layout {
     padding: rem(30px) rem(41px) rem(16px) rem(50px);
     justify-content: space-between;
+    background-size: 60%;
   }
   @include bigScreen-layout {
     padding: rem(30px) rem(52px) rem(28px) rem(89px);
@@ -27,7 +28,7 @@
 
 .back-arrow {
   z-index: 10000;
-  position: absolute;
+  position: fixed;
   top: rem(30px);
   left: rem(12px);
   display: flex;
